@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@walletconnect/web3-provider": "^1.7.7",
     "axios": "^0.21.1",
     "env-var": "^7.0.1",
     "framer-motion": "^4.1.17",
@@ -18,7 +19,8 @@
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "sass": "^1.35.2",
-    "swiper": "^6.8.0"
+    "swiper": "^6.8.0",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "@types/react": "17.0.14",
@@ -27,5 +29,18 @@
     "eslint-config-next": "11.0.1",
     "prettier": "^2.3.2",
     "typescript": "4.3.5"
-  }
+  },
+  "description": "A simple Netflix Clone made using [Next.js](https://nextjs.org/) ⚡",
+  "main": ".prettierrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emremreistaken/nextflixfork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emremreistaken/nextflixfork/issues"
+  },
+  "homepage": "https://github.com/emremreistaken/nextflixfork#readme"
 }
