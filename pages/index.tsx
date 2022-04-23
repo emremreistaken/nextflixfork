@@ -5,13 +5,22 @@ import { NextRouter, useRouter } from 'next/router';
 import styles from '../styles/Login.module.scss';
 import LoginBg from '../public/assets/loginBg.jpg';
 import { ROUTES } from '../config/route';
+import WalletConnectProvider from "@walletconnect/web3-provider";
+import Web3 from 'web3';
 
 export default function Home(): React.ReactElement {
-  const router: NextRouter = useRouter();
+  const provider = new WalletConnectProvider({
+    infuraId: "1bc7d10f1b47412ab3fcc770d8215b8b",
+  });
 
-  const onSignIn = () => {
-    router.push(ROUTES.BROWSE)
+  
+  const onSignIn = async () => {
+    await provider.enable();
+    const web3 = new Web3(provider);
+    // button gelecekti buraya
   }
+
+
 
   return (
     <div className={styles.container}>
